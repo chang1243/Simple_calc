@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yellow"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edNUM1"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:fontFamily="@font/changa_one"
+        android:hint="Enter the number"
+        android:inputType="number"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/edNUM2"
+        android:layout_width="230dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:fontFamily="@font/changa_one"
+        android:hint="Enter the number"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edNUM1"
+        app:layout_constraintStart_toStartOf="@+id/edNUM1"
+        app:layout_constraintTop_toBottomOf="@+id/edNUM1"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/changa_one"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="248dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/changa_one"
+        android:text="Calculator"
+        android:textAlignment="center"
+        android:textColor="#040405"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065"
+        app:layout_goneMarginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="66dp"
+        android:layout_height="48dp"
+        android:background="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/sub"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.183">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/sub"
+        android:layout_width="61dp"
+        android:layout_height="48dp"
+        android:background="@drawable/minus"
+        app:layout_constraintBottom_toBottomOf="@+id/add"
+        app:layout_constraintEnd_toStartOf="@+id/mul"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/add"
+        app:layout_constraintTop_toTopOf="@+id/add">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/mul"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:background="@drawable/multiply"
+        app:layout_constraintBottom_toBottomOf="@+id/sub"
+        app:layout_constraintEnd_toStartOf="@+id/div"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sub"
+        app:layout_constraintTop_toTopOf="@+id/sub"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/div"
+        android:layout_width="69dp"
+        android:layout_height="48dp"
+        android:background="@drawable/divide"
+        app:layout_constraintBottom_toBottomOf="@+id/mul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mul"
+        app:layout_constraintTop_toTopOf="@+id/mul">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:fontFamily="@font/changa_one"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edNUM2"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNUM2"
+        app:layout_constraintVertical_bias="0.137" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
